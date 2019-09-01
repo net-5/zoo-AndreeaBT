@@ -6,8 +6,7 @@ namespace ZOO
 {
     interface ITransferAnimals
     {
-        void ToTheVet();
-        void AnotherZoo();
+       
       string Location { get; set; }
     }
 }

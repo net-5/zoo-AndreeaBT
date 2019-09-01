@@ -4,11 +4,12 @@ using System.Text;
 
 namespace ZOO
 {
-    class Penguin : Zoo, ITransferAnimals
+    class Penguin : Zoo
     {
        
 
         public Penguin(string name) : base(name) { }
+       
         public new void Eat()
         {
 
@@ -16,10 +17,6 @@ namespace ZOO
             return;
         }
 
-        public new void ToTheVet()
-        {
-            Console.WriteLine("I haven't been to the vet in a long time, I'm a healthy pinguin.");
-            return;
-        }
+       
     }
 }

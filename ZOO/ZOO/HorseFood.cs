@@ -4,12 +4,11 @@ using System.Text;
 
 namespace ZOO
 {
-    public  abstract class HorseFood : Zoo
+    public  interface HorseFood 
     {
-        public HorseFood(string name) : base (name)
-        { }
-        public void EatsApples() { }
-        public void EatsCarrots() { }
+       
+        void EatsApples();
+        void EatsCarrots();
    
     }
 }

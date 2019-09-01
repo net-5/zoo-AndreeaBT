@@ -4,12 +4,23 @@ using System.Text;
 
 namespace ZOO
 {
-    public class Horse : HorseFood, ITransferAnimals
+    public class Horse : Zoo, HorseFood, ITransferAnimals
     {
         public Horse(string name) : base(name) { }
 
-      public string Location { get { return Location; } set { Location = value; } }
-        public new void EatsApples()
+        private string location;
+        public new string Location
+        {
+            get
+            {
+                return location;
+            }
+            set
+            {
+                location = value;
+            }
+        }
+        public  void EatsApples()
         {
             Console.WriteLine("I eat  apples");
         }
@@ -21,9 +32,10 @@ namespace ZOO
 
        
 
-        public new void EatsCarrots()
+        public  void EatsCarrots()
         {
             Console.WriteLine("I eat carrots");
         }
+       
     }  
 }

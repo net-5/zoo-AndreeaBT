@@ -4,20 +4,10 @@ using System.Text;
 
 namespace ZOO
 {
-    public class Snake : Zoo, ITransferAnimals
+    public class Snake : Zoo
     {
         public Snake(string name) : base(name) { }
-        public string Location
-        {
-            get
-            {
-                return Location;
-            }
-            set
-            {
-                Location = value;
-            }
-        }
+       
 
         public new void Eat()
         {
@@ -25,11 +15,7 @@ namespace ZOO
             return;
         }
        
-        public new void ToTheVet()
-        {
-            Console.WriteLine("I have once been to the vet, it was awfull");
-            return;
-        }
+       
       
     }
 }

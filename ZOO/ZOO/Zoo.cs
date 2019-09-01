@@ -7,7 +7,7 @@ namespace ZOO
     public class Zoo : ITransferAnimals
     {
         public string Name { get; set; }
-        public string Location { get { return Location; }set { Location = "I am going to live in the Zoo \'New Beginnings\' "; } }
+        public string Location { get; set; }
 
         public Zoo(string name) { Name = name;}
 
